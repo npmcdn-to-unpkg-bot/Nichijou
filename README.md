@@ -1,5 +1,5 @@
 > ## **日常0%** ##
-> latest  ver.Earl Grey 2016.09.06 
+> latest  *ver.EarlGrey* 2016.09.06 
 > 
 >  
 > 로미님 프로필 페이지입니다.

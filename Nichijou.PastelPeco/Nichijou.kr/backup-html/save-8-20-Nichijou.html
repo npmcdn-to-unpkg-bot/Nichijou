@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		
+		<title>Nichijou-2016-08-13 / New</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/tilteffect.css" />
+		<link rel="stylesheet" type="text/css" href="css/linkstyles.css"/>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!-- csstransforms3d-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load --> 
+		<script src="js/modernizr.custom.25376.js"></script>
+		<!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	    <!-- Font -->
+	    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Kavoon|Pacifico" rel="stylesheet">
+	    
+	    <link rel="stylesheet" href="//npmcdn.com/sircus@3.0.0/css/sircus.min.css" charset="utf-8" />
+	    
+	    <link href="css/owl.carousel.css" type="text/css" rel="stylesheet">
+    	<link href="css/owl.theme.css" type="text/css" rel="stylesheet">
+    	
+    	<link rel="stylesheet" type="text/css" href="css/vicons-font.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/buttons.css" />
+	 
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+
+	    <style>
+	    	@font-face
+	    	{
+	    		font-family:"Takumi";
+	    		src: url("fonts/TAKUMIYFONT.ttf") format("truetype");
+	    	}
+	    	@font-face
+	    	{
+	    		font-family:"hakidame";
+	    		src: url("fonts/hakidame.TTF") format("truetype");
+	    	}
+	    	@font-face
+	    	{
+	    		font-family:"Ounen-mouhitsu";
+	    		src: url("fonts/Ounen-mouhitsu.otf");
+	    	}
+	    	@font-face
+	    	{
+	    		font-family:"nicokaku_v1";
+	    		src: url("fonts/nicokaku_v1.ttf");
+	    	}
+	    	@font-face
+	    	{
+	    		font-family:"gomarice";
+	    		src: url("fonts/gomarice.TTF");
+	    	}
+	   		@font-face
+	    	{
+	    		font-family:"ShigotoMemogaki";
+	    		src: url("ShigotoMemogaki-Regular.ttf");
+	    	}
+	   	 	html {
+	   	 		scrollbar-3dLight-Color: #337ab7; 
+	   	 		scrollbar-arrow-color: #337ab7; 
+	   	 		scrollbar-base-color: #337ab7; 
+	   	 		scrollbar-Face-Color: #337ab7; 
+	   	 		scrollbar-Track-Color: #337ab7;
+	   	 		scrollbar-DarkShadow-Color: #337ab7;
+	   	 		scrollbar-Highlight-Color: #337ab7; 
+	   	 		scrollbar-Shadow-Color: #337ab7
+	   	 	}
+	   	 	body{
+	   	 		overflow-x:hidden;
+	   	 	}
+		    /* Chrome, Safari용 스크롤 바 */
+			::-webkit-scrollbar {
+				width: 8px; 
+				height: 8px;
+				border: 3px solid #5bc0de;
+				}
+			::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {
+				display: block; 
+				height: 10px;
+				background: #5bc0de;
+			}
+			::-webkit-scrollbar-track {
+				background: #5bc0de; 
+				-webkit-border-radius: 10px; border-radius:10px; 
+				-webkit-box-shadow: inset 0 0 40px rgba(0,0,0,.1);
+			}
+			::-webkit-scrollbar-thumb {
+				height: 50px; 
+				width: 50px; 
+				background: rgba(212,244,250,.5); 
+				-webkit-border-radius: 8px; 
+				border-radius: 8px;
+			}
+		       
+	        @media all and (min-width:1025px){
+  
+		    } 
+
+	        @media all and (min-width:768px) and (max-width:1024px){
+      
+    		}
+			@media screen and (max-width:500px) {
+
+			}
+			
+			#link-img a img{
+				margin-right:10px;
+				width:45px;
+			}
+			
+			#link-img a img:hover{
+				position:relative; animation:a .1s infinite;
+			}
+			@keyframes a{
+				from{left:-2px}
+				to{left:2px}
+			}
+			
+			#owl-demo .item img{
+			    display: block;
+			    width: 100%;
+			    height: auto;
+			}
+			
+   			#n p::selection{
+   				color:red;
+   			}
+			
+			.time-set
+			{
+				letter-spacing:3px;
+				font-family: 'Indie Flower', cursive;	
+			}
+			
+			#owl-demo .item img{
+			    display: block;
+			    width: 100%;
+			    height: auto;
+			}
+			
+			#background-text
+			{
+				margin-right:-20px; 
+				color:white;
+				opacity:.5; 
+				height:600px; 
+				z-index:1; 
+				position:absolute;
+				text-orientation: upright; 
+				float:right; writing-mode: vertical-rl; 
+				font-weight: bold; 
+				font-family:ShigotoMemogaki;
+				font-size:3em;
+			}
+			#background-text::selection {
+     			 color: #F361DC;
+   			}
+   			#clockbox::selection{
+   				color: #eee;
+   			}
+	    </style>
+	</head>
+	
+	<body style="background-color:#5bc0de;">
+		<div style="width:100%; position:fixed; z-index:11; background-color:rgba(255,255,255,.3);">
+			<div align='center' style="box-shadow: 0 0 3px black">
+				<section style="position:fixed; margin-top:10px; font-family:nicokaku_v1">
+					<div id="t" style="font-size:30px; float:left">
+						<p>こんにちは。</p>
+					</div>
+				</section>
+				<div id="showMenu">
+					<img src="charac-sd.png" style="width:40px; position:fixed; margin-left:-10px;">
+					<div class="link link--nukun" style="text-shadow:0px 1px 1px white; font-size:30px;">日常<span>0</span>%</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="perspective" class="perspective effect-movedown">
+			<div class="container" style="height:50px; background-color:#5bc0de;">
+				<div class="wrapper" style="margin-top:90px;"><!-- wrapper needed for scroll -->
+					<!-- Top Navigation -->
+
+					<div class="row" style="height:300px;">
+						<p id="background-text">
+							国立公園八幡平地域は40,489haの広さがあり、ほとんどが国有林である。手つかずの山岳公園で、アオモリトドマツやブナの原生林、山稜、湿原、噴気などの自然環境に多用な動植物が形成されている。
+							およそ100万年前に噴出したいくつかの火山でできている。
+							山頂部のなだらかな様子から楯状火山とされていたが、現在では山頂が台地状になった成層火山だといわれている。頂上部には9千～5千年前に発生した水蒸気爆発により多くの火口ができている。
+							その火口に水がたまり、八幡沼やガマ沼、メガネ沼などの沢山の火口沼が作られている。
+							周囲には広大な湿原や針葉樹林帯が形成されている。
+							1993年に頂上付近の見返峠の駐車場で料金徴収が開始された。
+							これは、有料道路であった八幡平アスピーテラインの無料化と松川温泉と藤七温泉を結ぶ樹海ラインの開通により、
+							利用者の急増に対応するために、利用者に自然を守るための応分の負担を求めるためである
+						</p>
+
+						<h1 align='center' style="z-index:3; margin-top:20px;">
+						<div>
+							<img style="z-index:3;position:relative;" src="img/decchi.png" id="logo-img">
+						</div>
+						</h1> 
+					</div>
+					
+					<div class="row">
+						<div class="col-md-12" font-family='gomarice' style="z-index:10; border-bottom:3px solid #eee; padding-bottom:30px;"></div>
+						<!-- time now -->
+						<div class="time-set" id="clockbox" style="z-index:1; position:absolute; top:290px;  align:center; font-size:2em; color: #E14FCA; text-shadow:0 0 1px  #d9534f"></div>
+					</div>
+
+					<div class="row" align='center' style="z-index:10; margin-top:50px;">
+						
+						<div class="col-md-2" style="z-index:10;height:200px;"></div>
+						
+						<!-- character -->
+						<img class="col-md-6" style="position:relative; z-index:10; width:400px" src="charac.png">
+						
+						<div class="col-md-4" style="z-index:1; width:400px; padding-top:50px; margin-top:50px;">
+							<div id="n" class="thumbnail" style="z-index:1; box-shadow:0px 3px 50px #337ab7; font-family:'Indie Flower', cursive; opacity: 0.8; font-size:2em; text-align:left; height:500px; background-color:#ecf0f1">
+						        <div>
+						        	<p style="float:right;"><a style="text-decoration:none;" href="#">English</a> / <a style="text-decoration:none;" href="#">Korean</a> / <a style="text-decoration:none;" href="#">Japanese</a></p>
+						        </div>
+						        <h1 align='center' style="font-size:2em; text-align:center; font-family: 'Kavoon', cursive;">Name</h1>
+						        <p>&nbsp &nbsp AGE : -</p>
+						        <p>&nbsp &nbsp SEX : M</p>
+						        <p>&nbsp &nbsp JOB : NEET</p>
+						        <p>&nbsp &nbsp HOBBY : DO NOTHING</p>
+						        <p>&nbsp &nbsp MOTTO : For Hard LIFE</p>
+						        
+						        <div>
+							        <div class="progress">
+									  	<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+									  		<p>HP</p>
+									  	</div>
+									</div>
+									
+									<div class="progress">
+									  	<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+									   	 	<p>MP</p>
+									  	</div>
+									</div>
+									
+									<div class="progress">
+									  	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+									  	  	<p>exp</p>
+									  	</div>
+									</div>
+								</div>
+						    </div>
+						   	
+						   	<div id="owl-demo" class="owl-carousel owl-theme">
+							  	<div class="item"><img src="img/fullimage1.jpg" alt="The Last of us"></div>
+							  	<div class="item"><img src="img/fullimage2.jpg" alt="GTA V"></div>
+							 	<div class="item"><img src="img/fullimage3.jpg" alt="Mirror Edge"></div>
+							</div>
+						</div>
+	
+						<div class="col-md-12" style="margin-top:60px; width:400px;" id="link-img">
+							<a href="#"><img alt="Twitter"  src="img/twitter-1.png" ></a>
+							<a href="#"><img alt="Google+"  src="img/google-1.png"  ></a>
+							<a href="#"><img alt="Facebook" src="img/facebook-1.png"></a>
+							<a href="#"><img alt="GitHub"   src="img/git-1.png"     ></a>
+							<a href="#"><img alt="Skype"    src="img/skype-1.png"   ></a>
+							<a href="#"><img alt="Youtube"  src="img/youtube-1.png" ></a>
+						</div>
+					</div>
+					
+					<div class="row" style="margin-top:100px">
+						<div class="col-md-6" style="float:left">
+							<div style="margin-left:10%; position:relative; z-index:1; width:300px;">
+								<img src="iphone.svg" style="width:300px;">
+								<div style="position:absolute; top:10%; left:3%; z-index:3; width:275px;">
+									<a  class="twitter-timeline" data-lang="ko" data-width="275" data-height="480" data-theme="light" data-link-color="#FAB81E" href="https://twitter.com/twitter">Tweets by twitter</a> 
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row" style="margin-top:100px">
+						<section class="Container t-gutter t-ptLg t-mbGt">
+							<div class="Grid-col t-sm-width4of12">
+					         	 <p style="" data-chaffle-speed="100" data-chaffle-delay="200" data-chaffle="ja">日本語</p>
+					        </div>
+				        </section>
+					</div>
+					
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+			
+			<nav class="outer-nav top horizontal">
+				<a href="#" ><span class="glyphicon glyphicon-th-large"></span> Home</a>
+				<a href="#" ><span class="glyphicon glyphicon-leaf"></span> Twitter</a>
+				<a href="#" ><span class="glyphicon glyphicon-camera"></span> Facebook</a>
+				<a href="#" ><span class="glyphicon glyphicon-cloud-upload"></span> GitHub</a>
+				<a href="#" ><span class="glyphicon glyphicon-star"></span> Skype</a>
+				<a href="#" ><span class="glyphicon glyphicon-envelope"></span> Youtube</a>
+			</nav>
+
+			<div id="player" class="aplayer" style="position:fixed; z-index:11; left:0; bottom:0; width:100%"></div>
+		</div><!-- /perspective -->
+	
+		
+		<!-- jQuery -->
+   		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		
+		<!-- Twitter --> 
+		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		
+		<!-- JS --> 
+		<script src="js/tiltfx.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script src="chaffle.min.js" charset="utf-8"></script>
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/aplayer/1.5.0/APlayer.min.js"></script>
+		<script src="js/APlayer.min.js"></script>
+		<script src="js/Aplayer-op.js"></script>   
+		
+		<!-- https://github.com/DIYgod/APlayer -->
+		<script>
+			var ap4 = new APlayer({
+			    element: document.getElementById('player'),
+			    narrow: false,
+			    autoplay: false,
+			    showlrc: false,
+			    mutex: true,
+			    theme: '#F361A6',
+			    music: [
+			        {
+			            title: 'あっちゅ～ま青春!',
+			            author: '七森中☆ごらく部',
+			            url: 'http://devtest.qiniudn.com/あっちゅ～ま青春!.mp3',
+			            pic: 'http://devtest.qiniudn.com/あっちゅ～ま青春!.jpg'
+			        },
+			        {
+			            title: 'secret base~君がくれたもの~',
+			            author: '茅野愛衣',
+			            url: 'http://devtest.qiniudn.com/secret base~.mp3',
+			            pic: 'http://devtest.qiniudn.com/secret base~.jpg'
+			        },
+			        {
+			            title: '回レ！雪月花',
+			            author: '小倉唯',
+			            url: 'http://devtest.qiniudn.com/回レ！雪月花.mp3',
+			            pic: 'http://devtest.qiniudn.com/回レ！雪月花.jpg'
+			        },
+			    ]
+			});
+			ap4.init();
+		</script>
+		
+		
+		<!-- chaffle --> 
+		<script>
+		    var elements = document.querySelectorAll('[data-chaffle]');
+		    var elm = document.querySelectorAll('[data-chaffle-onLoad]');
+		
+		    Array.prototype.forEach.call(elements, function (el) {
+		      var chaffle = new Chaffle(el)
+		      el.addEventListener('mouseover', function () {
+		        chaffle.init();
+		      });
+		    });
+		
+		    Array.prototype.forEach.call(elm, function (el) {
+		      var chaffle = new Chaffle(el, {
+		        delay: 200
+		      })
+		      setInterval(function(){
+		        chaffle.init();
+		      }, 8000)
+		    });
+		</script>
+		
+		<script type="text/javascript">
+			            var context;
+			            var text = "";
+			            var textDirection ="";
+			
+			            $(function()
+			            {
+			                context = document.getElementById("cvs").getContext("2d");            
+			                setInterval("animate()", 30);
+			        
+			                textDirection ="right";
+			                textXpos = 5;
+			                text = "Animation!";    
+			            });  
+			        
+			            function animate() {            
+			                // Clear screen
+			                context.clearRect(0, 0, 500, 500);
+			                context.globalAlpha = 1;
+			                context.fillStyle = '#fff';
+			                context.fillRect(0, 0, 500, 500);    
+			                                        
+			                var metrics = context.measureText(text);
+			                var textWidth = metrics.width;
+			                
+			                if (textDirection == "right") {
+			                    textXpos += 10;
+			
+			                    if (textXpos > 500 - textWidth) {
+			                        textDirection = "left";
+			                    }
+			                }
+			                else {
+			                    textXpos -= 10;
+			
+			                    if (textXpos < 10) {
+			                        textDirection = "right";
+			                    }                    
+			                }
+			
+			                context.font = '20px _sans';
+			                context.fillStyle = '#FF0000';
+			                context.textBaseline = 'top';
+			                context.fillText  ( text, textXpos, 180);    
+			              }    
+		</script>
+		
+		<!-- t.js -->
+		<script src="//cdn.rawgit.com/mntn-dev/t.js/master/t.min.js"></script>
+		
+		<script type="text/javascript">
+			/*<![CDATA[*/
+			var fin=!1;
+				function foo(){
+				$('mark').eq(0).css({background:'magenta'});
+				}
+				$(function(){
+				$('#t').t({
+				speed:200,
+				speed_vary:true,
+				mistype:20,
+				typing:function(elem,chars_total,chars_left,_char){
+				 if(_char=='*')foo();
+				 },
+				fin:function(){
+				 if(fin==!1){
+				  fin=!!1; //avoids triggering after 'add' cmd
+				  window.setTimeout(function(){$('#t').t('add',' ');},2e4);
+				  window.setInterval(function(){$('#t').find('.t-caret').toggle();},5e2);
+				 }
+				}
+				});
+				});
+			/*]]>*/
+		</script>
+		
+		<!-- 시계 -->
+		<script type="text/javascript">
+			function GetClock(){
+			var d=new Date();
+			var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+			if(nyear<1000) nyear+=1900;
+			var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+			if(nmin<=9) nmin="0"+nmin
+			if(nsec<=9) nsec="0"+nsec;
+			
+			document.getElementById('clockbox').innerHTML=""+nyear+"-"+(nmonth+1)+"-"+ndate+" "+nhour+":"+nmin+":"+nsec+"";
+			}
+			
+			window.onload=function(){
+			GetClock();
+			setInterval(GetClock,1000);
+			}
+		</script>
+
+		<!-- 이미지마우스 오버 -->
+		<script>
+			$(document).ready((function(){
+				$('').mouseover(function(){
+					$(this).attr("src","");
+				});
+				$('').mouseout(function(){
+					$(this).attr("src","");
+				});
+			}));
+		</script>
+		
+		<!-- Owl -->
+		<script>
+			$(document).ready(function() {
+			 
+			  $("#owl-demo").owlCarousel({
+			 
+			      navigation : true, // Show next and prev buttons
+			      slideSpeed : 300,
+			      paginationSpeed : 400,
+			      singleItem:true
+			 
+			      // "singleItem:true" is a shortcut for:
+			      // items : 1, 
+			      // itemsDesktop : false,
+			      // itemsDesktopSmall : false,
+			      // itemsTablet: false,
+			      // itemsMobile : false
+			 
+			  });
+			 
+			});
+		</script>
+		
+		<script>
+			$('#myModal').on('shown.bs.modal', function () {
+			  $('#myInput').focus()
+			})
+		</script>
+		
+		<!-- Jolt by Tiffany Rayside: http://codepen.io/tmrDevelops/pen/dPjYYP/ -->
+		<script>
+			window.requestAnimFrame = (function(callback) {
+				return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+					function(callback) {
+						window.setTimeout(callback, 1000 / 60);
+					};
+			})();
+	
+			var requestId, jolttime;
+	
+			var c = document.getElementById('canv');
+			var $ = c.getContext('2d');
+	
+			var s = 18; //grid square size
+			var mv = 10; //moving areas
+			var sp = 1; //move speed
+			var clm = 23; //columns
+			var rw = 10; //rows
+			var x = []; //x array
+			var y = []; //y array
+			var X = []; //starting X array
+			var Y = []; //starting Y array
+	
+			c.width  = c.offsetWidth;
+			c.height = c.offsetHeight;
+	
+			for (var i = 0; i < clm * rw; i++) {
+				x[i] = ((i % clm) - 0.5) * s;
+				y[i] = (Math.floor(i / clm) - 0.5) * s;
+				X[i] = x[i];
+				Y[i] = y[i];
+			}
+			var t = 0;
+	
+			function jolt() {
+				$.fillRect(0, 0, c.width, c.height);
+	
+				for (var i = 0; i < clm * rw; i++) {
+					if (i % clm != clm - 1 && i < clm * (rw - 1) - 1) {
+						$.fillStyle = "hsla(0,0,0,1)";
+						$.strokeStyle = "#95D384";
+						$.lineWidth = 1;
+						$.beginPath();
+						$.moveTo(x[i], y[i]);
+						$.lineTo(x[i + 1], y[i + 1]);
+						$.lineTo(x[i + clm + 1], y[i + clm + 1]);
+						$.lineTo(x[i + clm], y[i + clm]);
+						$.closePath();
+						$.stroke();
+						$.fill();
+					}
+				}
+				for (var i = 0; i < rw * clm; i++) {
+					if ((x[i] < X[i] + mv) && (x[i] > X[i] - mv) && (y[i] < Y[i] + mv) && (y[i] > Y[i] - mv)) {
+						x[i] = x[i] + Math.floor(Math.random() * (sp * 2 + 1)) - sp;
+						y[i] = y[i] + Math.floor(Math.random() * (sp * 2 + 1)) - sp;
+					} else if (x[i] >= X[i] + mv) {
+						x[i] = x[i] - sp;
+					} else if (x[i] <= X[i] - mv) {
+						x[i] = x[i] + sp;
+					} else if (y[i] >= Y[i] + mv) {
+						y[i] = y[i] - sp;
+					} else if (y[i] <= Y[i] + mv) {
+						y[i] = y[i] + sp;
+					}
+				}
+				//controls time of electric shake> when counter equals 0, it will reset for 5s then start again.
+				if (t % c.width == 0) {
+					jolttime = setTimeout('jolt()', 5);
+					t++;
+				} else {
+					jolttime = setTimeout('jolt()', 5);
+					t++;
+				}
+			}
+	
+			function start() {
+				if (!requestId) {
+					requestId = window.requestAnimFrame(jolt);
+				}
+			}
+	
+			function stop() {
+				if (requestId) {
+					clearTimeout(jolttime);
+					window.cancelAnimationFrame(requestId);
+					requestId = undefined;
+				}
+			}
+	
+			document.querySelector('a.link--asiri').addEventListener('mouseenter', start);
+			document.querySelector('a.link--asiri').addEventListener('mouseleave', stop);
+		</script>
+		<script>
+			// For Demo purposes only (show hover effect on mobile devices)
+			[].slice.call( document.querySelectorAll('.grid a') ).forEach( function(el) {
+				el.onclick = function() { return false; }
+			} );
+		</script>
+	</body>
+</html>
